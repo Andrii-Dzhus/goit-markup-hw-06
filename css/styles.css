@@ -36,9 +36,10 @@ p {
 }
 
 .container {
-  max-width: 1158px;
+  /* max-width: 1158px; */
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .header-container {
@@ -200,8 +201,10 @@ p {
 /*  Principles */
 
 .principles {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -219,24 +222,34 @@ p {
 
 .principles-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .principles-item {
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  width: 100%;
 }
 
 .principles-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  /* font-weight: 500; */
+  /* font-size: 20px; */
+  /* line-height: 1.2; */
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: capitalize;
 }
 
 .principles-text {
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -247,7 +260,8 @@ p {
 }
 
 .principles-item-con {
-  display: flex;
+  display: none;
+  /* display: flex;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -255,7 +269,7 @@ p {
   height: 112px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
 }
 /* Team */
 .team {
@@ -779,4 +793,57 @@ p {
 }
 
 .user-privacy-check {
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .principles-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .principles-list {
+    gap: 72px 24px;
+  }
+  .principles-subtitle {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .principles {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .principles-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .principles-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .principles-text {
+    font-weight: 400;
+  }
+  .principles-item-con {
+    display: flex;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
 }
