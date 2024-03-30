@@ -52,12 +52,6 @@ p {
 /* header */
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
-  /* padding-top: 16px;
-  padding-bottom: 16px;
-  max-width: 100%;
-  margin: auto; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -107,36 +101,48 @@ p {
   fill: #2f2f37;
 }
 /*  solutions */
-
+.container-solution {
+  padding: 0;
+}
 .solutions {
-  max-width: 1440px;
-  height: 600px;
-  margin: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* margin: auto; */
+  width: 100%;
+  padding: 72px 52px;
   background: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob-2x.jpg);
+  }
+}
 
 .solution-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   max-width: 496px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
 
 .solution-btn {
@@ -767,8 +773,11 @@ p {
 
 .user-privacy-check {
 }
-
+/* ================================== */
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .logo-item {
     display: flex;
     gap: 40px;
@@ -833,10 +842,33 @@ p {
   .address-link:focus {
     color: #404bbf;
   }
-  /* ==================== */
-  .container {
-    max-width: 768px;
+  /* ====================== */
+  .solutions {
+    padding: 112px 136px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
   }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x.jpg);
+    }
+  }
+
+  .solution-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+  /* ====================== */
   .principles-item {
     width: calc((100% - 24px) / 2);
   }
@@ -847,6 +879,7 @@ p {
     text-align: left;
   }
   /* =============== */
+
   .team {
     padding-top: 104px;
   }
@@ -870,12 +903,13 @@ p {
   }
 }
 
+/* =============================== */
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
   }
-
   /* ================= */
   .logo {
     margin-right: 76px;
@@ -890,7 +924,35 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-
+  /* ============ */
+  .container-solution {
+    max-width: 1440px;
+    padding: 0;
+  }
+  .solutions {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+  .solution-title {
+    margin-bottom: 48px;
+  }
   /* ========== */
   .principles {
     padding-top: 120px;
@@ -898,8 +960,8 @@ p {
   }
   .principles-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    /* flex-wrap: wrap; */
+    gap: 0 24px;
   }
   .principles-item {
     width: calc((100% - 3 * 24px) / 4);
