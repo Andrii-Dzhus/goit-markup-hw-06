@@ -231,21 +231,12 @@ p {
 
 .principles-item-con {
   display: none;
-  /* display: flex;
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px; */
 }
+
 /* Team */
+
 .team {
   background: #f4f4fd;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -265,12 +256,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 24px; */
   gap: 72px;
 }
 
 .team-item {
-  /* width: calc((100% - 3 * 24px) / 4); */
   width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
