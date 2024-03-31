@@ -81,7 +81,6 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
   padding: 17px 0;
-  /* margin-right: 76px; */
 }
 
 .logo-part {
@@ -100,12 +99,116 @@ p {
   border: none;
   fill: #2f2f37;
 }
+/* mob-menu */
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mob-menu-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* border: none; */
+}
+.mob-btn-close-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-close:hover,
+.mob-menu-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.mob-menu-close:hover .mob-btn-close-icon,
+.mob-menu-close:focus .mob-btn-close-icon {
+  fill: #ffffff;
+}
+.mob-logo-item {
+  margin-bottom: 60px;
+}
+.mob-logo-item-link:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-logo-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.mob-address-item-link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-address-item {
+  margin-bottom: 48px;
+}
+.mob-address-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.mob-item-list {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  /* align-content: center;
+  justify-content: center; */
+}
+.mob-item-list-fon {
+}
+.mob-item-icon {
+  fill: #f4f4fd;
+}
+.mob-lin-icon {
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-lin-icon:hover {
+  background-color: #404bbf;
+}
+.mob-lin-icon:focus {
+  background-color: #404bbf;
+}
+
 /*  solutions */
+
 .container-solution {
   padding: 0;
 }
 .solutions {
-  /* margin: auto; */
   width: 100%;
   padding: 72px 52px;
   background: rgba(46, 47, 66, 0.7);
